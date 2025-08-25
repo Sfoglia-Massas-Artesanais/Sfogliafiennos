@@ -48,7 +48,7 @@ async function carregarDetalhes() {
 
 async function carregarOutrosPratos(idAtual) {
   try {
-    const res = await fetch("http://localhost:5000/pratos");
+    const res = await fetch("https://server-sfoglia.onrender.com/pratos");
     if (!res.ok) throw new Error("Erro ao buscar outros pratos");
 
     const pratos = await res.json();
@@ -101,3 +101,4 @@ async function carregarOutrosPratos(idAtual) {
 }
 
 carregarDetalhes();
+
