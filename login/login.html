@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../assets/logos/logo-sobre.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <title>Login Painel de Administração - Sfoglia Massas Artersanais</title>
+  </head>
+  <body>
+    <main>
+      <div class="login-container">
+        <div class="bnt-voltar">
+          <a href="../index.html">
+            <i class="bxr bx-arrow-left-stroke"></i>
+          </a>
+        </div>
+        <div class="login-form">
+          <h1>Login</h1>
+          <form action="#" method="post">
+            <div class="input-group">
+              <label for="username">Usuário</label>
+              <input
+                placeholder="Ex.: 2025SfogliaGsm&Mm"
+                type="text"
+                id="username"
+                name="username"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="password">Senha</label>
+              <input
+                autocomplete="off"
+                placeholder="Ex.: 12345678"
+                type="password"
+                id="password"
+                name="password"
+                required
+              />
+            </div>
+            <button type="submit">Entrar</button>
+          </form>
+        </div>
+      </div>
+      <div id="modal-aviso" class="modal">
+        <div class="modal-content">
+          <p id="modal-message"></p>
+          <div class="modal-actions">
+            <button id="modal-ok">OK</button>
+            <button id="modal-cancel">Cancelar</button>
+          </div>
+        </div>
+      </div>
+      <div id="toast" class="toast"></div>
+    </main>
+    <script src="../js/login.js"></script>
+    <script src="../js/modal.js"></script>
+  </body>
+</html>

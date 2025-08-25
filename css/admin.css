@@ -1,0 +1,523 @@
+body {
+  display: flex;
+}
+
+.header {
+  width: 300px;
+  min-width: 300px;
+  height: 100vh;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.logo-adm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo-adm .logo {
+  width: 80%;
+  height: auto;
+}
+
+.logo-sobre {
+  display: none;
+}
+
+.pages-admin {
+  width: 100%;
+}
+
+.pages-admin li {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 5px 10px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.pages-admin li a {
+  font-size: 14px;
+  color: #721818;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.pages-admin li a i {
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+
+.pages-admin li:hover {
+  background: #721818;
+}
+
+.pages-admin li:hover a {
+  color: #ffffff;
+}
+
+.pages-admin li a .bx-cursor-crosshair-dot {
+  font-size: 12px;
+  position: absolute;
+  right: 10px;
+}
+
+.logout-container {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+.logout-container button {
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background: #721818;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #4c00005a;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.admin-dashboard {
+  width: 90%;
+  position: relative;
+  left: 5%;
+  padding: 40px 20px 20px 320px;
+  margin-bottom: 100px;
+}
+
+form {
+  background-color: #fff;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+form input {
+  width: 90%;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  border-radius: 10px;
+}
+
+form .btn-pesquisa {
+  width: 50px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-create {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.btn-create a {
+  background-color: #721818;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.lista-pratos-painel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 440px));
+  gap: 20px;
+}
+
+.lista-pratos-painel-tree {
+  grid-template-columns: repeat(auto-fit, minmax(360px, auto));
+}
+
+.lista-pratos-painel .menu-item-painel {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.271);
+}
+
+.lista-pratos-painel .menu-item-painel img,
+.lista-pratos-painel .menu-item-painel .desc-painel {
+  width: 50%;
+}
+
+.lista-pratos-painel .menu-item-painel img {
+  border-radius: 7px 0 0 7px;
+}
+
+.desc-painel {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.desc-painel h3 {
+  font-size: 0.8em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 0;
+}
+
+.desc-painel p {
+  font-size: 0.6em;
+  color: #555;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.desc-painel h4 {
+  font-size: 0.7em;
+  color: #721818;
+  margin-top: 5px;
+}
+
+.desc-painel .button-prato-painel {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.desc-painel .button-prato-painel button {
+  width: 48%;
+  height: 30px;
+  border: none;
+  outline: none;
+  background-color: #721818;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.desc-painel .button-prato-painel .btn-editar {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+#carousel-admin {
+  width: 90vw;
+  position: relative;
+  left: 5%;
+  padding: 40px 20px 20px 320px;
+  margin-bottom: 100px;
+}
+
+#carousel-admin h2 {
+  margin-bottom: 20px;
+}
+
+#form-carousel button {
+  width: 200px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: #721818;
+  color: #fff;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-item-admin {
+  width: 100%;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.carousel-item-admin img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.carousel-item-admin button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  background: #721818;
+  color: #fff;
+  border: 0;
+}
+
+@media (max-width: 1166px) {
+  .desc-painel h3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .header {
+    width: 300px;
+    height: 100vh;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .lista-pratos-painel .menu-item-painel {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .lista-pratos-painel .menu-item-painel img,
+  .lista-pratos-painel .menu-item-painel .desc-painel {
+    width: 100%;
+  }
+
+  .lista-pratos-painel {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 540px));
+  }
+
+  .lista-pratos-painel-tree {
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+  }
+
+  .lista-pratos-painel .menu-item-painel img {
+    border-radius: 7px 7px 0 0;
+  }
+}
+
+@media (max-width: 866px) {
+  .header {
+    width: 300px;
+    height: 100vh;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 799px) {
+  .header {
+    width: 80px;
+    min-width: 80px;
+    height: 100vh;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding: 20px 15px;
+  }
+
+  .header .logo {
+    display: none;
+  }
+
+  .header .logo-sobre {
+    display: block;
+    width: 100%;
+  }
+
+  .logout-container button {
+    padding: 10px;
+    gap: 0;
+    font-size: 25px;
+    left: 50%;
+  }
+
+  .logout-container button p {
+    display: none;
+  }
+
+  .admin-dashboard,
+  #carousel-admin {
+    width: 100vw;
+    position: relative;
+    left: 0%;
+    padding: 40px 20px 20px 100px;
+    margin-bottom: 100px;
+  }
+
+  .pages-admin li a {
+    justify-content: center;
+    padding: 5px;
+  }
+
+  .pages-admin li a p {
+    display: none;
+  }
+
+  .pages-admin li a i {
+    font-size: 20px;
+  }
+
+  .pages-admin li a .bx-cursor-crosshair-dot {
+    display: none;
+  }
+
+  .desc-painel .button-prato-painel {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .desc-painel .button-prato-painel button {
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .desc-painel .button-prato-painel button i {
+    margin-bottom: 2px;
+  }
+
+  .lista-pratos-painel {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 540px));
+  }
+
+  .lista-pratos-painel-tree {
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+  }
+}
+
+@media (max-width: 520px) {
+  .header {
+    width: 60px;
+    min-width: 60px;
+    height: 100vh;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  .header .logo {
+    display: none;
+  }
+
+  .header .logo-sobre {
+    display: block;
+    width: calc(100% + 10px);
+  }
+
+  .logout-container {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .logout-container button {
+    padding: 7px;
+    gap: 0;
+    font-size: 20px;
+  }
+
+  .logout-container button p {
+    display: none;
+  }
+
+  .pages-admin li {
+    padding: 7px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.274);
+  }
+
+  .pages-admin li a {
+    gap: 0;
+    padding: 0;
+  }
+
+  .pages-admin li a i {
+    font-size: 20px;
+  }
+
+  .admin-dashboard,
+  #carousel-admin {
+    padding: 20px 20px 20px 80px;
+  }
+
+  .desc-painel h3 {
+    font-size: 0.6em;
+    -webkit-line-clamp: 2;
+  }
+
+  .lista-pratos-painel {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 540px));
+    gap: 10px;
+  }
+
+  .lista-pratos-painel-tree {
+    grid-template-columns: repeat(auto-fit, minmax(120px, auto));
+  }
+
+  .menu-item-painel {
+    gap: 0;
+  }
+
+  .desc-painel {
+    padding: 5px;
+  }
+
+  .desc-painel .button-prato-painel {
+    flex-wrap: nowrap;
+    gap: 5px;
+  }
+
+  .desc-painel .button-prato-painel button {
+    width: 50%;
+    height: 20px;
+    font-size: 8px;
+  }
+
+  .desc-painel .categoria {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 8px;
+  }
+}

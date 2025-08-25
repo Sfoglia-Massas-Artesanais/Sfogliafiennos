@@ -1,0 +1,105 @@
+.header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: #fff;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.header .logo {
+  height: 90px;
+}
+
+.header form {
+  background-color: #fff;
+  width: 60%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header form input {
+  width: calc(100% - 50px);
+  height: 40px;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  border-radius: 10px;
+}
+
+.header form button {
+  width: 50px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rds-scs .rds-scs-icon {
+  display: flex;
+  gap: 10px;
+}
+
+.rds-scs .rds-scs-icon i {
+  color: #721818;
+  font-size: 30px;
+}
+
+.navbar {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #721818;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  margin: 0 10px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 15px;
+  border-radius: 30px;
+}
+
+.navbar ul li a i {
+  margin-right: 5px;
+}
+
+.navbar ul li a:hover {
+  background-color: #a61b1b;
+}
+
+.navbar ul li a:active {
+  background-color: #f6ebeb;
+  color: #721818;
+}
