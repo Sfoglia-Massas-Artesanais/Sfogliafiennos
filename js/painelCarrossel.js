@@ -4,7 +4,7 @@ const formCarrossel = document.querySelector("#form-carousel");
 async function carregarCarrossel() {
   listaCarrossel.innerHTML = "<p>Carregando...</p>";
   try {
-    const res = await fetch("http://localhost:5000/carrossel");
+    const res = await fetch("https://server-sfoglia.onrender.com/carrossel");
     const imagens = await res.json();
 
     listaCarrossel.innerHTML = "";
@@ -23,7 +23,7 @@ async function carregarCarrossel() {
         const id = btn.dataset.id;
         const choice = await showModal("Deseja excluir esta imagem?", true);
         if (choice === "ok") {
-          await fetch(`http://localhost:5000/carrossel/${id}`, {
+          await fetch(`https://server-sfoglia.onrender.com/carrossel/${id}`, {
             method: "DELETE",
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -42,7 +42,7 @@ formCarrossel.addEventListener("submit", async (e) => {
   e.preventDefault();
   const url = document.querySelector("#carousel-url").value;
 
-  await fetch("http://localhost:5000/carrossel", {
+  await fetch("https://server-sfoglia.onrender.com/carrossel", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

@@ -4,7 +4,9 @@ async function carregarPratos() {
   lista.innerHTML = "<p>Carregando...</p>";
 
   try {
-    const res = await fetch("http://localhost:5000/pratos?search=");
+    const res = await fetch(
+      "https://server-sfoglia.onrender.com/pratos?search="
+    );
     const pratos = await res.json();
 
     lista.innerHTML = "";

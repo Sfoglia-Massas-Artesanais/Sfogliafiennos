@@ -32,7 +32,7 @@ setInterval(() => {
 async function carregarCarrossel() {
   const container = document.querySelector(".carousel-images");
   try {
-    const res = await fetch("http://localhost:5000/carrossel");
+    const res = await fetch("https://server-sfoglia.onrender.com/carrossel");
     const imagens = await res.json();
 
     container.innerHTML = "";

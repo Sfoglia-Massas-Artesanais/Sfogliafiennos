@@ -5,7 +5,7 @@ document.querySelector("form").addEventListener("submit", async (e) => {
   const password = document.querySelector("#password").value;
 
   try {
-    const res = await fetch("http://localhost:5000/auth/login", {
+    const res = await fetch("https://server-sfoglia.onrender.com/auth/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ username, password }),

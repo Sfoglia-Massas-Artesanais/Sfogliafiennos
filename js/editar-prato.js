@@ -3,7 +3,7 @@ const id = params.get("id");
 
 async function carregarPrato() {
   try {
-    const res = await fetch(`http://localhost:5000/pratos/${id}`);
+    const res = await fetch(`https://server-sfoglia.onrender.com/pratos/${id}`);
     const prato = await res.json();
 
     document.querySelector("#nome").value = prato.nome;

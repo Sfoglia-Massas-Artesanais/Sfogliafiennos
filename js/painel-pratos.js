@@ -21,11 +21,14 @@ const formPesquisa = document.querySelector(".pesquisa");
 async function carregarPratos(search = "") {
   lista.innerHTML = "<p>Carregando...</p>";
   try {
-    const res = await fetch(`http://localhost:5000/pratos?search=${search}`, {
-      headers: {
-        Authorization: `Bearer ${localStorage.getItem("token")}`,
-      },
-    });
+    const res = await fetch(
+      `https://server-sfoglia.onrender.com/pratos?search=${search}`,
+      {
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+        },
+      }
+    );
 
     if (res.status === 401) {
       localStorage.removeItem("token");
@@ -82,12 +85,15 @@ function adicionarEventos() {
       const choice = await showModal("Deseja excluir este prato?", true);
       if (choice === "ok") {
         try {
-          const res = await fetch(`http://localhost:5000/pratos/${id}`, {
-            method: "DELETE",
-            headers: {
-              Authorization: `Bearer ${localStorage.getItem("token")}`,
-            },
-          });
+          const res = await fetch(
+            `https://server-sfoglia.onrender.com/pratos/${id}`,
+            {
+              method: "DELETE",
+              headers: {
+                Authorization: `Bearer ${localStorage.getItem("token")}`,
+              },
+            }
+          );
 
           if (res.status === 401) {
             localStorage.removeItem("token");

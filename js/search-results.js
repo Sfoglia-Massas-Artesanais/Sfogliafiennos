@@ -8,7 +8,9 @@ async function buscarPratos() {
 
   try {
     const res = await fetch(
-      `http://localhost:5000/pratos?search=${encodeURIComponent(query)}`
+      `https://server-sfoglia.onrender.com/pratos?search=${encodeURIComponent(
+        query
+      )}`
     );
     const pratos = await res.json();
 

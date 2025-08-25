@@ -11,7 +11,7 @@ document
     };
 
     try {
-      const res = await fetch("http://localhost:5000/feedback", {
+      const res = await fetch("https://server-sfoglia.onrender.com/feedback", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),

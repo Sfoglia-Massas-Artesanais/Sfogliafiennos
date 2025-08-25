@@ -10,7 +10,7 @@ document.querySelector("form").addEventListener("submit", async (e) => {
   };
 
   try {
-    const res = await fetch("http://localhost:5000/pratos", {
+    const res = await fetch("https://server-sfoglia.onrender.com/pratos", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

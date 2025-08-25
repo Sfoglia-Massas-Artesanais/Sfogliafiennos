@@ -9,7 +9,7 @@ async function carregarDetalhes() {
   }
 
   try {
-    const res = await fetch(`http://localhost:5000/pratos/${id}`);
+    const res = await fetch(`https://server-sfoglia.onrender.com/pratos/${id}`);
     if (!res.ok) throw new Error("Erro ao buscar prato");
 
     const prato = await res.json();

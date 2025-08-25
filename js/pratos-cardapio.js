@@ -1,6 +1,6 @@
 async function carregarPratosAleatorios() {
   try {
-    const res = await fetch("http://localhost:5000/pratos");
+    const res = await fetch("https://server-sfoglia.onrender.com/pratos");
     const pratos = await res.json();
 
     if (!pratos.length) return;
