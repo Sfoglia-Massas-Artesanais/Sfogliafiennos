@@ -129,14 +129,17 @@
   .menu-item h3 {
     font-size: 0.8rem;
     -webkit-line-clamp: 2;
+    margin-bottom: 5px;
   }
 
   .menu-item p {
     font-size: 0.5rem;
+    margin-bottom: 5px;
   }
 
   .menu-item h4 {
     font-size: 0.9rem;
+    margin-bottom: 5px;
   }
 
   .menu-item button {
@@ -243,5 +246,10 @@
 @media (max-width: 500px) {
   .dishes-list-tree {
     grid-template-columns: repeat(auto-fit, minmax(140px, auto));
+  }
+
+  .menu-item .titulo {
+    font-size: 0.7rem;
+    -webkit-line-clamp: 1;
   }
 }
