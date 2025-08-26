@@ -172,7 +172,7 @@ form .btn-pesquisa {
   background-color: #fff;
   border-radius: 7px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.271);
-  max-width: 400px;
+  max-width: 500px;
 }
 
 .lista-pratos-painel .menu-item-painel img,
@@ -533,4 +533,5 @@ form .btn-pesquisa {
     font-size: 12px;
   }
 }
+
 
