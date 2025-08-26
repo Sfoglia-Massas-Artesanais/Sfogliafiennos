@@ -1,3 +1,7 @@
+main {
+  min-height: 80vh;
+}
+
 .dishes-list {
   position: relative;
   top: 60px;
@@ -26,7 +30,7 @@
 }
 
 footer {
-  margin-top: 200px;
+  margin-top: 50px;
 }
 
 .categoria-text {

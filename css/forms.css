@@ -89,7 +89,8 @@ body {
 }
 
 form input,
-form textarea {
+form textarea,
+form select {
   width: 100%;
   border: none;
   outline: none;

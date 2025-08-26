@@ -342,6 +342,11 @@ form .btn-pesquisa {
     flex-direction: column;
     padding: 20px;
   }
+
+  .carousel-item-admin button {
+    padding: 5px;
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 799px) {
@@ -461,7 +466,9 @@ form .btn-pesquisa {
   }
 
   .pages-admin li {
-    padding: 7px;
+    padding: 7px 5px;
+    width: 90%;
+    margin-left: 5%;
     margin-bottom: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.274);
   }
@@ -472,7 +479,7 @@ form .btn-pesquisa {
   }
 
   .pages-admin li a i {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .admin-dashboard,
@@ -519,5 +526,9 @@ form .btn-pesquisa {
     -webkit-box-orient: vertical;
     overflow: hidden;
     font-size: 8px;
+  }
+
+  #form-carousel button {
+    font-size: 12px;
   }
 }
