@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../../assets/logos/logo-sobre.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/mobile.css" />
+    <link rel="stylesheet" href="../css/admin.css" />
+    <title>Painel Administrativo - Sfoglia Massas Artesanais</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-adm">
+        <img
+          src="../assets/logos/logo-painel.png"
+          alt="logo da Sfoglia Massas Artesanais"
+          class="logo"
+        />
+        <img
+          src="../assets/logos/logo-sobre.png"
+          alt="logo da Sfoglia Massas Artesanais"
+          class="logo-sobre"
+        />
+      </div>
+      <ul class="pages-admin">
+        <li>
+          <a href="./painelDeAdiministracao.html"
+            ><i class="bxr bx-card-view"></i>
+            <p>Painel Administrativo</p>
+            <i class="bxr bx-cursor-crosshair-dot"></i>
+          </a>
+        </li>
+        <li>
+          <a href="./propagandas/"
+            ><i class="bxr bx-images"></i>
+            <p>Add propagandas</p>
+          </a>
+        </li>
+      </ul>
+      <div class="logout-container">
+        <button id="logout-btn" class="btn-logout">
+          <i class="bxr bx-arrow-out-left-square-half"></i>
+          <p>Sair</p>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="admin-dashboard">
+        <div class="btn-create">
+          <a href="./formulario/criar/" class="btn-novo-prato">
+            <i class="bx bx-plus"></i> Novo Prato
+          </a>
+        </div>
+        <form action="#" class="pesquisa">
+          <input
+            type="text"
+            placeholder="Pesquisar prato..."
+            class="input-pesquisa"
+          />
+          <button type="submit" class="btn-pesquisa">
+            <i class="bx bx-search"></i>
+          </button>
+        </form>
+        <div class="lista-pratos-painel"></div>
+      </section>
+      <div id="modal-aviso" class="modal">
+        <div class="modal-content">
+          <p id="modal-message"></p>
+          <div class="modal-actions">
+            <button id="modal-ok">OK</button>
+            <button id="modal-cancel">Cancelar</button>
+          </div>
+        </div>
+      </div>
+      <div id="toast" class="toast"></div>
+    </main>
+    <script src="../js/painel-pratos.js"></script>
+    <script src="../js/toast.js"></script>
+    <script src="../js/modal.js"></script>
+  </body>
+</html>

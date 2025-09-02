@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/logos/logo-sobre.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/carrossel.css" />
+    <link rel="stylesheet" href="./css/cardapio.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <title>Página Inicial - Sfoglia Massas Artesanais</title>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        src="./assets/logos/logo-navbar.png"
+        alt="logo da Sfoglia Massas Artesanais"
+        class="logo"
+      />
+      <form id="search-form">
+        <input
+          autocomplete="off"
+          type="text"
+          name="search"
+          placeholder="Pesquise seu prato predileto..."
+        />
+        <button type="submit"><i class="bx bx-search"></i></button>
+      </form>
+      <div class="rds-scs">
+        <div class="rds-scs-icon">
+          <a target="_blank" href="https://www.instagram.com/sfogliamassas/"
+            ><i class="bxl bx-instagram"></i>
+          </a>
+          <a
+            target="_blank"
+            href="https://wa.me/5581984073966?text=Olá! Gostaria de saber mais informações sobre o prato ${prato.nome} que vocês oferecem. Seria possível me enviar detalhes sobre os ingredientes, tamanho e preço."
+            ><i class="bxl bx-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="./"><i class="bx bx-home"></i> Início</a>
+          </li>
+          <li>
+            <a href="./categorias/ravioli/"
+              ><i class="bx bx-fork"></i> Raviolis</a
+            >
+          </li>
+          <li>
+            <a href="./categorias/fettuccine/"
+              ><i class="bx bx-knife"></i> Fettuccines</a
+            >
+          </li>
+          <li>
+            <a href="./categorias/combos/"
+              ><i class="bx bx-fork-knife"></i> Combos</a
+            >
+          </li>
+          <li>
+            <a href="./categorias/cardapio/"
+              ><i class="bxr bx-list-ul" style="font-size: 18px"></i>
+              Cardápio</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="carousel">
+        <div class="carousel-images"></div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </section>
+      <section class="menu-section">
+        <div class="menu-itens">
+          <div class="line" id="linha-1"></div>
+          <div class="line" id="linha-2"></div>
+          <div class="text-cardapio">
+            <h2>Descubra o Sabor da <span>Sfoglia Massas Artesanais!</span></h2>
+            <p>
+              Se você valoriza ingredientes frescos, receitas autênticas e
+              aquele toque caseiro que faz toda a diferença, o cardápio da
+              Sfoglia foi feito pra você. Clique abaixo e conheça nossas massas
+              artesanais feitas com carinho e sofisticação. Seu próximo prato
+              favorito está aqui!
+            </p>
+            <a href="./categorias/cardapio/">Ver Cardápio Completo</a>
+          </div>
+        </div>
+      </section>
+      <section id="feedback" class="feedback-section">
+        <div class="feedback-container">
+          <h1>Aprecia o que viu? Compartilhe <br />seu feedback conosco.</h1>
+          <form id="feedback-form">
+            <div class="form-group">
+              <label for="name">Nome Completo:</label>
+              <input
+                placeholder="Ex: Augusto da Silva Batista"
+                type="text"
+                id="name"
+                name="name"
+                required
+              />
+
+              <label for="email">Seu melhor E-mail:</label>
+              <input
+                placeholder="Augustinho0121@email.com"
+                type="email"
+                id="email"
+                name="email"
+                required
+              />
+
+              <label for="message">Mensagem:</label>
+              <textarea
+                placeholder="Deixe aqui sua mensagem, sugestão ou crítica construtiva!"
+                id="message"
+                name="message"
+                rows="4"
+                required
+              ></textarea>
+
+              <button type="submit">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="mapa-sfoglia">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.745670920193!2d-34.9688080258754!3d-8.025138980106851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1a315bbd7193%3A0xcff6fd327617e2cb!2sR.%20Mata%20Grande%2C%2018%20-%20V%C3%A1rzea%2C%20Recife%20-%20PE%2C%2050980-050!5e0!3m2!1spt-BR!2sbr!4v1753886038941!5m2!1spt-BR!2sbr"
+          width="100%"
+          height="550px"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+      <div id="toast" class="toast"></div>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img
+            src="./assets/logos/logo-navbar.png"
+            alt="Logo da Sfoglia Massas Artesanais"
+          />
+        </div>
+        <div class="link-contato">
+          <div class="footer-links">
+            <ul>
+              <h3>Links Úteis</h3>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.ifood.com.br/delivery/camaragibe-pe/sfoglia-massas-artesanais-santa-monica/2f66d94e-8da0-410e-90ff-32312fcf2db0?UTM_Medium=share&fbclid=PAZXh0bgNhZW0CMTEAAafC8Qg5s-XByI99n0qqNA0N37qACtE6lAuuL6Y501ZGQ7WiL9xpcfSfi8HcyQ_aem_dHCMaXHav_YA7XMPaTO5-Q"
+                  >Ifood</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/sfogliamassas/"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://wa.me/5581984073966?text=Olá! Gostaria de saber mais informações sobre o prato ${prato.nome} que vocês oferecem. Seria possível me enviar detalhes sobre os ingredientes, tamanho e preço."
+                  >Whatsapp</a
+                >
+              </li>
+              <li><a href="#feedback">Feedback</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h3>Contato</h3>
+            <p>Email: sfogliasuporte@gmail.com</p>
+            <p>Telefone: (81) 98407-3966</p>
+            <p>Endereço: R. Mata Grande, 18 - Várzea</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 Sfoglia Massas Artesanais. Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+    <script src="./js/carrossel.js"></script>
+    <script src="./js/search.js"></script>
+    <script src="./js/pratos-cardapio.js"></script>
+    <script src="./js/feedback.js"></script>
+    <script src="./js/toast.js"></script>
+  </body>
+</html>

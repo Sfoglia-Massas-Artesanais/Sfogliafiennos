@@ -1,0 +1,77 @@
+.details-content {
+  position: relative;
+  top: 50px;
+  left: 5%;
+  width: 90%;
+  padding: 40px 20px;
+  margin-bottom: 100px;
+}
+
+.prato-details {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+.prato-details img,
+.prato-details .prato-infos {
+  width: 50%;
+}
+
+.prato-infos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.prato-infos h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.prato-infos p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.prato-infos h4 {
+  font-size: 1.8rem;
+  color: #721818;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.prato-infos button {
+  border: none;
+  border-radius: 5px;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.prato-infos .wpp {
+  background-color: #25d366;
+  color: white;
+}
+
+.prato-infos .ifood {
+  background-color: #e00023;
+  color: white;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+.dishes-list {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  left: 0;
+}
+
+.outros-pratos {
+  margin-top: 70px;
+}
