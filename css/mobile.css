@@ -212,7 +212,8 @@
     padding: 2px 4px;
   }
 
-  .navbar ul li a i {
+  .navbar ul li a i,
+  .navbar ul li a .bx-list-ul {
     font-size: 10px;
   }
 
@@ -254,5 +255,32 @@
   .menu-item .titulo {
     font-size: 0.7rem;
     -webkit-line-clamp: 1;
+  }
+}
+
+@media (max-width: 415px) {
+  .navbar ul li a i {
+    display: none;
+  }
+
+  .menu-section .text-cardapio h2 {
+    font-size: 1.5rem;
+  }
+
+  .feedback-section h1 {
+    font-size: 1.5rem;
+  }
+
+  footer h3 {
+    font-size: 12px;
+  }
+
+  footer p,
+  footer a {
+    font-size: 12px;
+  }
+
+  .footer-bottom p {
+    font-size: 10px;
   }
 }
