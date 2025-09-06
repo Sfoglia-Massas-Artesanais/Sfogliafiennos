@@ -1,0 +1,17 @@
+.dishes-content {
+  width: 100%;
+  position: relative;
+  top: 35px;
+  padding: 20px 0;
+}
+
+.dishes-content h2 {
+  position: relative;
+  left: 90px;
+  top: 20px;
+}
+
+.dishes-content .dishes-list {
+  padding: 60px 20px;
+  top: 0;
+}

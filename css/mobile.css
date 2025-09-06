@@ -1,0 +1,286 @@
+@media (max-width: 1200px) {
+  .dishes-list {
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+    gap: 15px;
+    width: 90%;
+    left: 5%;
+    padding: 40px 20px;
+  }
+
+  .dishes-list-dois {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 250px));
+  }
+
+  .dishes-list-tree {
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+  }
+
+  .outros-pratos .dishes-list {
+    width: 100%;
+    left: 0;
+  }
+}
+
+@media (max-width: 1085px) {
+  .prato-details {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .prato-details img,
+  .prato-details .prato-infos {
+    width: 80%;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 950px) {
+  .menu-item img {
+    width: calc(100% + 20px);
+  }
+
+  .menu-item h3 {
+    -webkit-line-clamp: 1;
+  }
+
+  .dishes-list-tree {
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+  }
+}
+
+@media (max-width: 764px) {
+  .header {
+    flex-direction: column;
+    padding: 0;
+    height: 120px;
+    padding: 20px 0;
+  }
+
+  .header .logo {
+    height: 60px;
+    margin-top: -20px;
+  }
+
+  .header form {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .rds-scs {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+
+  .rds-scs .rds-scs-icon {
+    gap: 5px;
+  }
+
+  .rds-scs .rds-scs-icon i {
+    color: #721818;
+    font-size: 25px;
+  }
+
+  .carousel {
+    position: relative;
+    top: 35px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0;
+  }
+
+  button.prev,
+  button.next {
+    font-size: 0.7rem;
+    padding: 0.5rem;
+  }
+
+  .categoria-text {
+    top: 60px;
+    left: 20px;
+    font-size: 20px;
+  }
+
+  .dishes-list {
+    width: 100%;
+    left: 0;
+  }
+
+  .dishes-list-dois {
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+  }
+
+  .menu-section {
+    top: 0px;
+  }
+
+  .menu-section .menu-itens .line {
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .menu-item {
+    width: 100%;
+  }
+
+  .menu-item h3 {
+    font-size: 0.8rem;
+    -webkit-line-clamp: 2;
+    margin-bottom: 5px;
+  }
+
+  .menu-item p {
+    font-size: 0.5rem;
+    margin-bottom: 5px;
+  }
+
+  .menu-item h4 {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+
+  .menu-item button {
+    font-size: 0.7rem;
+    height: 25px;
+  }
+
+  .dishes-list-um .menu-item {
+    width: 250px;
+  }
+
+  .text-cardapio {
+    width: 90%;
+    margin-bottom: 0;
+  }
+
+  .feedback-section {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .feedback-section h1 {
+    font-size: 2rem;
+  }
+
+  .details-content {
+    width: 100%;
+    left: 0;
+  }
+
+  .prato-details img,
+  .prato-details .prato-infos {
+    width: 100%;
+  }
+
+  .prato-infos h3 {
+    font-size: 1.5rem;
+  }
+
+  .prato-infos p {
+    font-size: 0.8rem;
+  }
+
+  .prato-infos h4 {
+    font-size: 1.3rem;
+  }
+
+  .prato-infos button {
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+
+  .navbar {
+    height: 35px;
+    justify-content: center;
+    top: 120px;
+  }
+
+  .navbar ul li {
+    margin: 0 8px;
+  }
+
+  .navbar ul li a {
+    font-size: 10px;
+    padding: 2px 4px;
+  }
+
+  .navbar ul li a i,
+  .navbar ul li a .bx-list-ul {
+    font-size: 10px;
+  }
+
+  footer {
+    height: auto;
+  }
+
+  footer h3 {
+    color: #313131;
+    font-size: 16px;
+  }
+
+  footer a,
+  footer p {
+    font-size: 14px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer .footer-content .footer-logo img {
+    width: 200px;
+  }
+
+  .footer-content .link-contato {
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .dishes-list-tree {
+    grid-template-columns: repeat(auto-fit, minmax(140px, auto));
+  }
+
+  .menu-item .titulo {
+    font-size: 0.7rem;
+    -webkit-line-clamp: 1;
+  }
+}
+
+@media (max-width: 415px) {
+  .navbar ul li a i {
+    display: none;
+  }
+
+  .menu-section .text-cardapio h2 {
+    font-size: 1.5rem;
+  }
+
+  .feedback-section h1 {
+    font-size: 1.5rem;
+  }
+
+  footer h3 {
+    font-size: 12px;
+  }
+
+  footer p,
+  footer a {
+    font-size: 12px;
+  }
+
+  .footer-bottom p {
+    font-size: 10px;
+  }
+}
